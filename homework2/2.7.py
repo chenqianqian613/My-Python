@@ -8,7 +8,7 @@
 #     B-->成绩在 [80,90)
 #     C-->成绩在 [70,80)
 #     D-->成绩<70
-import random as rd
+import random as r
 def pingji(score):
     dengji = {}
     for k, v in score.items():
@@ -23,10 +23,10 @@ def pingji(score):
     return dengji
 
 
-if __name__ == '__main__':
-    score1 = {}
-    for i in range(20):
-        score1['学生%d' % (i + 1)] = rd.randint(30, 100)  #生成的随机分数定在30--100之间
-    print("学生的成绩为：\n{}".format(score1))
-    rank = pingji(score1)
-    print("\n学生的等级为：\n{}".format(rank))
+
+s1 = {}
+for i in range(20):
+    s1['学生%d' % (i + 1)] = r.randint(36, 100)  #生成的随机分数定在30--100之间
+print("学生的成绩为：\n{}".format(s1))
+dj = pingji(s1)
+print("\n学生的等级为：\n{}".format(dj))
