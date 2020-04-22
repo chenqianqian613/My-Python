@@ -29,10 +29,10 @@ from people import ppp
 def display(dogs,people):
     print('#当前场上人狗选手剩余情况#')
     for i in range(len(dogs)):
-        print('{}号狗选手的剩余血量：{}，攻击力：{}'.format(dogs[i].num,dogs[i].blood,dogs[i].strong))
+        print('{}号狗选手的剩余血量：{}，攻击力：{}'.format(dogs[i].n,dogs[i].blood,dogs[i].strong))
     print('~~'*20)
     for j in range(len(people)):
-        print('{}号人选手的剩余血量：{}，打击力：{}'.format(people[j].num,people[j].blood,people[j].strong))
+        print('{}号人选手的剩余血量：{}，打击力：{}'.format(people[j].n,people[j].blood,people[j].strong))
 
 
 

@@ -29,7 +29,7 @@
       <recent name="C:\Users\windows\PycharmProjects\homework6\6.5" />
     </key>
   </component>
-  <component name="RunManager" selected="Python.6.6">
+  <component name="RunManager" selected="Python.fight">
     <configuration name="6.2" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
       <module name="homework6" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -137,8 +137,8 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="Python.6.6" />
         <item itemvalue="Python.fight" />
+        <item itemvalue="Python.6.6" />
         <item itemvalue="Python.6.4" />
         <item itemvalue="Python.6.3" />
         <item itemvalue="Python.6.2" />
@@ -159,22 +159,26 @@
     <servers />
   </component>
   <component name="WindowStateProjectService">
-    <state width="1254" height="131" key="GridCell.Tab.0.bottom" timestamp="1587315981707">
+    <state width="1254" height="130" key="GridCell.Tab.0.bottom" timestamp="1587514661823">
       <screen x="0" y="0" width="1280" height="680" />
     </state>
-    <state width="1254" height="131" key="GridCell.Tab.0.bottom/0.0.1280.680@0.0.1280.680" timestamp="1587315981707" />
-    <state width="1254" height="131" key="GridCell.Tab.0.center" timestamp="1587315981707">
+    <state width="1254" height="130" key="GridCell.Tab.0.bottom/0.0.1280.680@0.0.1280.680" timestamp="1587514661823" />
+    <state width="1254" height="130" key="GridCell.Tab.0.center" timestamp="1587514661823">
       <screen x="0" y="0" width="1280" height="680" />
     </state>
-    <state width="1254" height="131" key="GridCell.Tab.0.center/0.0.1280.680@0.0.1280.680" timestamp="1587315981707" />
-    <state width="1254" height="131" key="GridCell.Tab.0.left" timestamp="1587315981707">
+    <state width="1254" height="130" key="GridCell.Tab.0.center/0.0.1280.680@0.0.1280.680" timestamp="1587514661823" />
+    <state width="1254" height="130" key="GridCell.Tab.0.left" timestamp="1587514661823">
       <screen x="0" y="0" width="1280" height="680" />
     </state>
-    <state width="1254" height="131" key="GridCell.Tab.0.left/0.0.1280.680@0.0.1280.680" timestamp="1587315981707" />
-    <state width="1254" height="131" key="GridCell.Tab.0.right" timestamp="1587315981707">
+    <state width="1254" height="130" key="GridCell.Tab.0.left/0.0.1280.680@0.0.1280.680" timestamp="1587514661823" />
+    <state width="1254" height="130" key="GridCell.Tab.0.right" timestamp="1587514661823">
       <screen x="0" y="0" width="1280" height="680" />
     </state>
-    <state width="1254" height="131" key="GridCell.Tab.0.right/0.0.1280.680@0.0.1280.680" timestamp="1587315981707" />
+    <state width="1254" height="130" key="GridCell.Tab.0.right/0.0.1280.680@0.0.1280.680" timestamp="1587514661823" />
+    <state x="273" y="129" key="com.intellij.ide.util.TipDialog" timestamp="1587514562381">
+      <screen x="0" y="0" width="1280" height="680" />
+    </state>
+    <state x="273" y="129" key="com.intellij.ide.util.TipDialog/0.0.1280.680@0.0.1280.680" timestamp="1587514562381" />
     <state x="219" y="-1" width="840" height="1034" key="search.everywhere.popup" timestamp="1587291461417">
       <screen x="0" y="0" width="1280" height="680" />
     </state>
