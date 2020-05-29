@@ -1,0 +1,5 @@
+9.4题目说明：
+设计一款能实现多人聊天的系统：使用socket和多线程技术，编写全多人聊天室；
+参考文档：https://blog.csdn.net/CxsGhost/article/details/103319864
+
+备注说明：get.py、server.py、client.py三个文件皆为9.4题所含文件。
