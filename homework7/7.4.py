@@ -32,7 +32,7 @@ for k in list:
         l1.append(i.text)
     d1['ans'] = l1
 
-    with open('1.txt','a+',encoding='utf-8') as f:
+    with open('requestexe.txt','a+',encoding='utf-8') as f:
         f.write(d1['example']+'\n')
         for i in d1['ans']:
             f.write("--------------------------------------------")
