@@ -29,12 +29,12 @@ def get_one_item(items):  # 获得一个信息条目的所有信息
                 title = title.split('" href="')[0]
                 info.append(title)
 
-            if ('<span class="t2' in content):  # 获取公司名称
+            if ('<span class="t2' in content):  # 获取company
                 company = content.split('<a target="_blank" title="')[1]
                 company = company.split('" href="')[0]
                 info.append(company)
 
-            if ('<span class="t3' in content):  # 获取公司地址
+            if ('<span class="t3' in content):  # 获取address
                 address = content.split('"t3">')[1]
                 address = address.split('</span>')[0]
                 info.append(address)
@@ -44,7 +44,7 @@ def get_one_item(items):  # 获得一个信息条目的所有信息
                 salary = salary.split('</span>')[0]
                 info.append(salary)
 
-            if ('<span class="t5' in content):  # 获取发布日期
+            if ('<span class="t5' in content):  # 获取date
                 date = content.split('"t5">')[1]
                 date = date.split('</span>')[0]
                 info.append(date)
@@ -95,20 +95,20 @@ def run_get(pagenum,name):
      for ite in pageInfo:
          for i in range(len(ite)):
              ite[i] = '"' + ite[i] + '"'
-         sql = 'insert into `table`(岗位,公司名称,公司地址,薪资,发布日期) values({},{},{},{},{})'.format(ite[0], ite[1], ite[2], ite[3],
+         sql = 'insert into `table`(jobs,company,address,salary,date) values({},{},{},{},{})'.format(ite[0], ite[1], ite[2], ite[3],
                                                                                          ite[4])
          conn.execute(sql)
          db.commit()
      db.close()
 
-def calculate_avg():#计算北京地区的平均薪资
+def calculate_avg():#计算北京地区的平均salary
     # 读取数据库
     # 连接MYSQL数据库
     db = pymysql.connect(host='127.0.0.1', user='root', password='root', db='jobinfo', port=3306)
     print('连接数据库成功！')
     conn = db.cursor()  # 获取指针以操作数据库
     # conn.execute('set names utf8')
-    sql = "SELECT 薪资 FROM `table` WHERE 公司地址 LIKE '北京%'"
+    sql = "SELECT salary FROM `table` WHERE address LIKE '北京%'"
     conn.execute(sql)
 
     desc = conn.description  # 获取字段的描述，默认获取数据库字段名称，重新定义时通过AS关键重新命名即可
@@ -117,30 +117,30 @@ def calculate_avg():#计算北京地区的平均薪资
     db.close()
     total=0.0
     for dic in data_dict:
-        if("万/月" in dic['薪资']):
-            value=dic['薪资'].split('万')[0]
+        if("万/月" in dic['salary']):
+            value=dic['salary'].split('万')[0]
             value=value.split('-')
             a=float(value[0])*10000
             b=float(value[1])*10000
             total+=(a+b)/2
-        elif("千/月" in dic['薪资']):
-            value = dic['薪资'].split('千')[0]
+        elif("千/月" in dic['salary']):
+            value = dic['salary'].split('千')[0]
             value = value.split('-')
             a = float(value[0]) * 1000
             b = float(value[1]) * 1000
             total += (a + b) / 2
-        elif("万/年" in dic['薪资']):
-            value = dic['薪资'].split('万')[0]
+        elif("万/年" in dic['salary']):
+            value = dic['salary'].split('万')[0]
             value = value.split('-')
             a = float(value[0]) * 10000/12
             b = float(value[1]) * 10000/12
             total += (a + b) / 2
-        elif("元/天" in dic['薪资']):
-            value = dic['薪资'].split('元')[0]
+        elif("元/天" in dic['salary']):
+            value = dic['salary'].split('元')[0]
             a = float(value[0]) * 30
             total += a
         else:
-            value = dic['薪资'].split('元')[0]
+            value = dic['salary'].split('元')[0]
             a = float(value[0]) * 30*24
             total += a
 
