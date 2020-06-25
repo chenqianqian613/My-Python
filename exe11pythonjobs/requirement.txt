@@ -1,0 +1,4 @@
+urllib
+pymysql==0.9.3
+lxml==4.5.1
+threading
